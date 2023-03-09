@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--fuente de texto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style12202022.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <div class="login-container">
+            <h2>Iniciar sesión</h2>
+            <p>Selecciona el método de autenticación</p>
+
+            <form action="">
+                <p>
+                    <label for="username">Username</label>
+                    <input class="input" type="text" name="username" id="username" />
+                </p>
+                
+                <p>
+                    <label for="password">Password</label>
+                    <input class="input" type="text" name="password" id="password" />
+                </p>
+
+                <div class="options">
+                    <div>
+                        Recordarme
+                        <input type="checkbox" name="rememberme" id="rememberme" />
+                    </div>
+                    <div>
+                        <a href="#">Olvidé mi contraseña</a>
+                    </div>
+                </div>
+
+                <p>
+                    <input type="submit" class="btn btn-login" value="log in" />
+                </p>
+                
+                <p class="txt-select">Escoge otro metodo de autenticación</p>
+
+                <div class="providers">
+                    <button class="btn btn-google">Google</button>
+                    <button class="btn btn-facebook">Facebook</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="welcome-screen-container">
+            
+        </div>
+    </div>
+</body>
+</html>

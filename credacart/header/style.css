@@ -1,0 +1,133 @@
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 600,
+    'GRAD' 0,
+    'opsz' 48; font-size: 30px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* Menú General ----------------------------------------------------- */
+
+header {
+    height: 80px;
+    border-top: solid 20px #0044bb;
+}
+
+.in-header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.in-header a {
+    text-decoration: none;
+    color: #404040;
+    font-weight: bold;
+
+}
+
+/* Menú Izquierdo ----------------------------------------------------- */
+
+.menu-l {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: right;
+    
+}
+
+.bg-menu-l {
+    background: transparent url("resources/bg-menu-left.webp") no-repeat right;
+    background-size: contain;
+    width: 85px;
+}
+
+
+/* Menú central ------------------------------------------------------ */
+
+.menu-c {
+    display: flex;
+    background-color: #e0eeee;
+}
+
+.bg-menu-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 60px;
+    background: url("resources/logo-bg.webp") no-repeat top;
+    background-size: contain;
+}
+
+.logo-hero {
+    width: 260px;
+}
+
+/* Menú Derecho ------------------------------------------------------ */
+.menu-r {
+    width: 50%;
+    display: flex;
+    background-color: transparent;
+}
+
+.bg-menu-r {
+    background: transparent url("resources/bg-menu-right.webp") no-repeat left;
+    background-size: contain;
+    width: 85px;
+}
+
+/* Menú Izquierdo y Derecho ------------------------------------------------------ */
+
+.menu-l, .menu-r , .menu-c{
+    height: 50px;
+}
+
+.menu-l nav,ul, .menu-r nav,ul{
+    display: flex;
+    width: 100%;
+}
+
+.menu-l nav, .menu-r nav {
+    background-color: #e0eeee;
+    align-items: center;
+}
+
+.menu-l ul, .menu-r ul{
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+/* Animaciones del header */
+
+.animar {
+  position: relative;
+  animation-name: pop-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes pop-in {
+    from {width: 160px;top: -10px;}
+    50% {top: 20px}
+    to{width: 260px;top: 0px;}
+}

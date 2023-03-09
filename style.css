@@ -1,0 +1,302 @@
+html, body{
+    font-family: "Exo 2", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 10px 0;
+    box-shadow: 0px 10px 20px -15px rgba(0,0,0,0.30);
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: #808080;
+}
+
+.logo {
+    padding: 10px 0 10px 100px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.category:hover {
+    color: #0071BD;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    border: 1px solid #000000;
+    margin-top: 6px;
+    padding: 1px 600px 1px 20px;
+    margin-left: 60px;
+    border-radius: 50px;
+    color: #808080;
+}
+
+.buscador span {
+    margin-left: 10px;
+}
+
+/*_________________________*/
+/*Titulo de la seccion HTML\______________________________________________________________________________*/
+
+.intro {
+    text-align: center;
+}
+
+.title-intro {
+    font-size: 30px;
+}
+
+.html-title {
+    background: linear-gradient(90deg,#E44D26,#ff8a38);
+    border-radius: 100px;
+    max-width: 260px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.html-title h2 {
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+}
+
+.html-hr {
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    position: relative;
+    display: block;
+    top: -44px;
+    left: 8%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #E44D26;
+}
+
+/*___________________________*/
+/*Tarjetas de la seccion HTML\______________________________________________________________________________*/
+
+.html-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.html-content a {
+    text-decoration: none;
+    color: black;
+    margin: 10px 0;
+}
+
+.html-content a article {
+    max-width: 220px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.html-content a:hover h3 {
+    text-decoration: none;
+    color: #E44D26;
+    transition: 400ms;
+}
+
+.html-content a:hover article {
+    box-shadow: 1px 1px 20px -10px rgba(0,0,0,0.90);
+    transition: 400ms;
+}
+
+.html-content article {
+    box-shadow: 1px 1px 20px -10px rgba(0,0,0,0.30);
+    transition: 300ms;
+}
+
+/*________________________*/
+/*Titulo de la seccion CSS\______________________________________________________________________________*/
+
+.css-title {
+    background: linear-gradient(90deg,#0071BD,#20daff);
+    border-radius: 100px;
+    max-width: 260px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.css-title h2 {
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+}
+
+.css-hr {
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    position: relative;
+    display: block;
+    top: -44px;
+    left: 8%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #00c9ff;
+}
+
+/*___________________________*/
+/*Tarjetas de la seccion CSS\______________________________________________________________________________*/
+
+.css-section {
+    display: flex;
+    justify-content: center;
+}
+
+.hyper {
+    padding: 20px;
+}
+
+.css-content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.css-content article {
+    width: 260px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px -10px rgba(0,0,0,0.30);
+    transition: 300ms;
+}
+
+.css-content article:hover {
+    transition: 400ms;
+    box-shadow: 1px 1px 20px -10px rgba(0,0,0,0.90);
+}
+
+.css-content a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.css-content article:hover h3 {
+    color: #0071BD;
+    text-decoration: none;
+}
+
+/*________________________*/
+/*Titulo de la seccion PRO\______________________________________________________________________________*/
+
+.pro-title {
+    background: linear-gradient(90deg,#00309e,#00c9ff);
+    border-radius: 100px;
+    max-width: 260px;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.pro-title h2 {
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+}
+
+.pro-hr {
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    position: relative;
+    display: block;
+    top: -44px;
+    left: 8%;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #00309e;
+}
+
+/*___________________________*/
+/*Tarjetas de la seccion PRO\______________________________________________________________________________*/
+
+.pro-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pro-content {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pro-content article {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 260px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px -10px rgba(0,0,0,0.30);
+    transition: 300ms;
+}
+
+.pro-content article:hover {
+    transition: 400ms;
+    box-shadow: 1px 1px 20px -10px rgba(0,0,0,0.90);
+}
+
+.pro-content a {
+    display: block;
+    color: #303030;
+    text-decoration: none;
+}
+
+.pro-content article:hover h3 {
+    color: #00309e;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*_____*/
+/* ... \______________________________________________________________________________*/
