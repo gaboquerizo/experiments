@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #2aaaff, #44ff77);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 30px 60px #00000030;
+    transition: 0.3s;
+}
+
+.container .card:hover {
+    height: 360px;
+}
+
+.container .card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #323232;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.container .card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px #00000022;
+}
+
+.container .card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.container .card .content {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0 30px;
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.container .card:hover .content {
+    top: 120px;
+    height: 220px;
+}
+
+.container .card .content h2 {
+    font-size: 28px;
+    padding-bottom: 10px;
+    color: var(--clr);
+}
+
+.container .card .content p {
+    line-height: 22px;
+    color: #323232;
+}
+
+.container .card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 15px;
+    background: var(--clr);
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+}

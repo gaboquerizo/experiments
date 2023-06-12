@@ -1,0 +1,27 @@
+html body {
+    font-family: 'EXO 2',sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #4a4747;
+}
+
+h2 {
+    background-color: #252525;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    margin-bottom: 60px;
+}
+
+.main-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    border-radius: 20px;
+    background-color: #ffffff;
+}

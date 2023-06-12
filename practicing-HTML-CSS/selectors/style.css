@@ -1,0 +1,29 @@
+html, body{
+    font-family: "Exo 2", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #deeeee;
+}
+
+h1 {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 0 auto;
+}
+
+.american {
+    background-color: aqua;
+}
+
+
