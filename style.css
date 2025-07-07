@@ -12,6 +12,10 @@ header {
     box-shadow: 0px 10px 20px -15px rgba(0,0,0,0.30);
 }
 
+section {
+    padding: 3em;
+}
+
 .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
@@ -21,46 +25,16 @@ header {
     color: #808080;
 }
 
-.logo {
-    padding: 10px 0 10px 100px ;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.category {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.category:hover {
-    color: #0071BD;
-}
-
-.buscador {
-    display: flex;
-    align-items: center;
-    background-color: #f3f3f3;
-    border: 1px solid #000000;
-    margin-top: 6px;
-    padding: 1px 600px 1px 20px;
-    margin-left: 60px;
-    border-radius: 50px;
-    color: #808080;
-}
-
-.buscador span {
-    margin-left: 10px;
-}
-
-/*_________________________*/
-/*Titulo de la seccion HTML\______________________________________________________________________________*/
+/*  _________________________  */
+/* /Titulo de la seccion HTML\______________________________________________________________________________*/
 
 .intro {
     text-align: center;
+    margin: 1em;
+}
+
+.intro-content {
+    padding: 3em 0;
 }
 
 .title-intro {
@@ -208,33 +182,34 @@ header {
 /*________________________*/
 /*Titulo de la seccion PRO\______________________________________________________________________________*/
 
+.pro {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
 .pro-title {
-    background: linear-gradient(90deg,#00309e,#00c9ff);
-    border-radius: 100px;
-    max-width: 260px;
-    margin: 0 20px;
     text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+
+.pro-title-html {
+    background: linear-gradient(90deg,#e54c21,#f16524);
+}
+.pro-title-css {
+    background: linear-gradient(90deg,#1d96ea,#35c1f1);
+}
+.pro-title-js {
+    background: linear-gradient(90deg,#e4a126,#f7e025);
 }
 
 .pro-title h2 {
     font-weight: bold;
-    color: white;
     padding: 10px 20px;
+    margin: 0;
 }
 
-.pro-hr {
-    z-index: -1;
-    margin: 0;
-    padding: 0;
-    width: 90%;
-    position: relative;
-    display: block;
-    top: -44px;
-    left: 8%;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #00309e;
-}
 
 /*___________________________*/
 /*Tarjetas de la seccion PRO\______________________________________________________________________________*/
@@ -242,6 +217,7 @@ header {
 .pro-section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pro-content {
@@ -269,6 +245,7 @@ header {
     display: block;
     color: #303030;
     text-decoration: none;
+    width: 100%;
 }
 
 .pro-content article:hover h3 {
